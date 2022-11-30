@@ -1089,7 +1089,7 @@ class SwinFusion(nn.Module):
         resi_connection: The convolutional block before residual connection. '1conv'/'3conv'
     """
 
-    def __init__(self, img_size=64, patch_size=1, in_chans=1,
+    def __init__(self, img_size=64, patch_size=1, in_chans=3,
                  embed_dim=96, Ex_depths=[6, 6], Fusion_depths=[2, 2, 2], Re_depths=[6,6], 
                  Ex_num_heads=[6, 6], Fusion_num_heads=[6, 6, 6], Re_num_heads=[6, 6],
                  window_size=7, mlp_ratio=4., qkv_bias=True, qk_scale=None,
