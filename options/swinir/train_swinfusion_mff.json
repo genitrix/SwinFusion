@@ -11,7 +11,7 @@
     "dist": true,
     "scale": 1 // 2 | 3 | 4
     ,
-    "n_channels": 1 // broadcast to "datasets", 1 for grayscale, 3 for color
+    "n_channels": 3 // broadcast to "datasets", 1 for grayscale, 3 for color
     ,
     "path": {
       "root": "Model/Multi_Focus_Fusion" // "denoising" | "superresolution" | "dejpeg"
@@ -35,7 +35,7 @@
         ,
         "dataloader_shuffle": true,
         "dataloader_num_workers": 8,
-        "dataloader_batch_size": 9 // Total batch size =3x3=12 in SwinIR
+        "dataloader_batch_size": 6 // 9 before, Total batch size =3x3=12 in SwinIR
       },
       "test": {
         "name": "test_dataset" // just name
