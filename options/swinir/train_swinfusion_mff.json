@@ -51,7 +51,7 @@
       "net_type": "swinfusion1",
       "upscale": 1 // 2 | 3  | 4
       ,
-      "in_chans": 1,
+      "in_chans": 3,
       "img_size": 128,
       "window_size": 8,
       "img_range": 1.0,
