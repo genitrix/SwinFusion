@@ -30,6 +30,7 @@
         ,
         "dataroot_B": "Dataset/trainsets/MFI-WHU/B_Y" // path of L training dataset
         ,
+        "dataroot_GT": "Dataset/trainsets/MFI-WHU/GT",
         "H_size": 128 // 128/192/256/512.
         ,
         "dataloader_shuffle": true,
@@ -41,9 +42,9 @@
         ,
         "dataset_type": "mff" // "dncnn" | "dnpatch" | "fdncnn" | "ffdnet" | "sr" | "srmd" | "dpsr" | "plain" | "plainpatch" | "jpeg" |  "loe"
         ,
-        "dataroot_A": "Dataset/valsets/Lytro/A_Y" // path of H testing dataset
-        ,
-        "dataroot_B": "Dataset/valsets/Lytro/B_Y" // path of L testing dataset
+        "dataroot_A": "Dataset/valsets/MFI-WHU/A_Y",
+        "dataroot_B": "Dataset/valsets/MFI-WHU/B_Y",
+        "dataroot_GT": "Dataset/trainsets/MFI-WHU/GT"
       }
     },
     "netG": {
@@ -89,7 +90,7 @@
       ,
       "G_optimizer_clipgrad": null // unused
       ,
-      "G_optimizer_reuse": true // 
+      "G_optimizer_reuse": true //
       ,
       "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
       ,
